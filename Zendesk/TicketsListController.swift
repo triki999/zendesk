@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TicketsListController: UIViewController {
+class TicketsListController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,9 +16,18 @@ class TicketsListController: UIViewController {
         HelperServices.getTickesListSignal().doNext { (tickets) in
             print(tickets)
         }.start()
-        
-       
 
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return 0
+    }
+    
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.ticketCell.V)
+        return cell!
     }
     
     override func didReceiveMemoryWarning() {

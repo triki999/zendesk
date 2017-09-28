@@ -19,6 +19,8 @@
 		754CF7231F7D7DEC000A7185 /* VO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF7221F7D7DEC000A7185 /* VO.swift */; };
 		754CF7261F7D9CB1000A7185 /* Reactive+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF7251F7D9CB1000A7185 /* Reactive+Extensions.swift */; };
 		754CF7281F7D9ED7000A7185 /* TiketsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF7271F7D9ED7000A7185 /* TiketsModel.swift */; };
+		754CF72D1F7DA14A000A7185 /* TicketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF72C1F7DA14A000A7185 /* TicketCell.swift */; };
+		754CF7301F7DA1E4000A7185 /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF72F1F7DA1E4000A7185 /* AppEnums.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,8 @@
 		754CF7221F7D7DEC000A7185 /* VO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VO.swift; sourceTree = "<group>"; };
 		754CF7251F7D9CB1000A7185 /* Reactive+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+Extensions.swift"; sourceTree = "<group>"; };
 		754CF7271F7D9ED7000A7185 /* TiketsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiketsModel.swift; sourceTree = "<group>"; };
+		754CF72C1F7DA14A000A7185 /* TicketCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketCell.swift; sourceTree = "<group>"; };
+		754CF72F1F7DA1E4000A7185 /* AppEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnums.swift; sourceTree = "<group>"; };
 		995E3AB65C51EA612707BE76 /* Pods-Zendesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zendesk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zendesk/Pods-Zendesk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,6 +85,9 @@
 		754CF7021F7D7638000A7185 /* Zendesk */ = {
 			isa = PBXGroup;
 			children = (
+				754CF72E1F7DA1C6000A7185 /* enums */,
+				754CF72A1F7DA117000A7185 /* views */,
+				754CF7291F7DA0F2000A7185 /* view_controllers */,
 				754CF7241F7D9C71000A7185 /* extensions */,
 				754CF7211F7D7DD0000A7185 /* value_objects */,
 				754CF71C1F7D7926000A7185 /* errors */,
@@ -88,7 +95,6 @@
 				754CF7181F7D782F000A7185 /* viewmodels */,
 				754CF7171F7D7812000A7185 /* models */,
 				754CF7031F7D7638000A7185 /* AppDelegate.swift */,
-				754CF7051F7D7638000A7185 /* TicketsListController.swift */,
 				754CF7071F7D7638000A7185 /* Main.storyboard */,
 				754CF70A1F7D7638000A7185 /* Assets.xcassets */,
 				754CF70C1F7D7638000A7185 /* LaunchScreen.storyboard */,
@@ -143,6 +149,38 @@
 				754CF7251F7D9CB1000A7185 /* Reactive+Extensions.swift */,
 			);
 			name = extensions;
+			sourceTree = "<group>";
+		};
+		754CF7291F7DA0F2000A7185 /* view_controllers */ = {
+			isa = PBXGroup;
+			children = (
+				754CF7051F7D7638000A7185 /* TicketsListController.swift */,
+			);
+			name = view_controllers;
+			sourceTree = "<group>";
+		};
+		754CF72A1F7DA117000A7185 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				754CF72B1F7DA11E000A7185 /* cells */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		754CF72B1F7DA11E000A7185 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				754CF72C1F7DA14A000A7185 /* TicketCell.swift */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
+		754CF72E1F7DA1C6000A7185 /* enums */ = {
+			isa = PBXGroup;
+			children = (
+				754CF72F1F7DA1E4000A7185 /* AppEnums.swift */,
+			);
+			name = enums;
 			sourceTree = "<group>";
 		};
 		F7EAE90351FF5194C3B6761A /* Pods */ = {
@@ -278,11 +316,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				754CF72D1F7DA14A000A7185 /* TicketCell.swift in Sources */,
 				754CF7261F7D9CB1000A7185 /* Reactive+Extensions.swift in Sources */,
 				754CF7281F7D9ED7000A7185 /* TiketsModel.swift in Sources */,
 				754CF7061F7D7638000A7185 /* TicketsListController.swift in Sources */,
 				754CF71E1F7D793B000A7185 /* GeneralErrors.swift in Sources */,
 				754CF7231F7D7DEC000A7185 /* VO.swift in Sources */,
+				754CF7301F7DA1E4000A7185 /* AppEnums.swift in Sources */,
 				754CF7201F7D7C64000A7185 /* HelperServices.swift in Sources */,
 				754CF7041F7D7638000A7185 /* AppDelegate.swift in Sources */,
 				754CF71B1F7D78BA000A7185 /* MainService.swift in Sources */,
