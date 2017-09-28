@@ -8,18 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class TicketsListController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
+        HelperServices.getTickesListSignal().doNext { (tickets) in
+            print(tickets)
+        }.start()
+        
+       
+
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 

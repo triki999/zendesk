@@ -9,10 +9,16 @@
 /* Begin PBXBuildFile section */
 		41E331FF7E3707DFECFAB095 /* Pods_Zendesk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427968100AD13B889B579986 /* Pods_Zendesk.framework */; };
 		754CF7041F7D7638000A7185 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF7031F7D7638000A7185 /* AppDelegate.swift */; };
-		754CF7061F7D7638000A7185 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF7051F7D7638000A7185 /* ViewController.swift */; };
+		754CF7061F7D7638000A7185 /* TicketsListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF7051F7D7638000A7185 /* TicketsListController.swift */; };
 		754CF7091F7D7638000A7185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754CF7071F7D7638000A7185 /* Main.storyboard */; };
 		754CF70B1F7D7638000A7185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 754CF70A1F7D7638000A7185 /* Assets.xcassets */; };
 		754CF70E1F7D7638000A7185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 754CF70C1F7D7638000A7185 /* LaunchScreen.storyboard */; };
+		754CF71B1F7D78BA000A7185 /* MainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF71A1F7D78BA000A7185 /* MainService.swift */; };
+		754CF71E1F7D793B000A7185 /* GeneralErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF71D1F7D793B000A7185 /* GeneralErrors.swift */; };
+		754CF7201F7D7C64000A7185 /* HelperServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF71F1F7D7C64000A7185 /* HelperServices.swift */; };
+		754CF7231F7D7DEC000A7185 /* VO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF7221F7D7DEC000A7185 /* VO.swift */; };
+		754CF7261F7D9CB1000A7185 /* Reactive+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF7251F7D9CB1000A7185 /* Reactive+Extensions.swift */; };
+		754CF7281F7D9ED7000A7185 /* TiketsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF7271F7D9ED7000A7185 /* TiketsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,11 +26,17 @@
 		427968100AD13B889B579986 /* Pods_Zendesk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zendesk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		754CF7001F7D7638000A7185 /* Zendesk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zendesk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		754CF7031F7D7638000A7185 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		754CF7051F7D7638000A7185 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		754CF7051F7D7638000A7185 /* TicketsListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketsListController.swift; sourceTree = "<group>"; };
 		754CF7081F7D7638000A7185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		754CF70A1F7D7638000A7185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		754CF70D1F7D7638000A7185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		754CF70F1F7D7638000A7185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		754CF71A1F7D78BA000A7185 /* MainService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainService.swift; sourceTree = "<group>"; };
+		754CF71D1F7D793B000A7185 /* GeneralErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralErrors.swift; sourceTree = "<group>"; };
+		754CF71F1F7D7C64000A7185 /* HelperServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperServices.swift; sourceTree = "<group>"; };
+		754CF7221F7D7DEC000A7185 /* VO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VO.swift; sourceTree = "<group>"; };
+		754CF7251F7D9CB1000A7185 /* Reactive+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reactive+Extensions.swift"; sourceTree = "<group>"; };
+		754CF7271F7D9ED7000A7185 /* TiketsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiketsModel.swift; sourceTree = "<group>"; };
 		995E3AB65C51EA612707BE76 /* Pods-Zendesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zendesk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zendesk/Pods-Zendesk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,14 +81,68 @@
 		754CF7021F7D7638000A7185 /* Zendesk */ = {
 			isa = PBXGroup;
 			children = (
+				754CF7241F7D9C71000A7185 /* extensions */,
+				754CF7211F7D7DD0000A7185 /* value_objects */,
+				754CF71C1F7D7926000A7185 /* errors */,
+				754CF7191F7D7869000A7185 /* services */,
+				754CF7181F7D782F000A7185 /* viewmodels */,
+				754CF7171F7D7812000A7185 /* models */,
 				754CF7031F7D7638000A7185 /* AppDelegate.swift */,
-				754CF7051F7D7638000A7185 /* ViewController.swift */,
+				754CF7051F7D7638000A7185 /* TicketsListController.swift */,
 				754CF7071F7D7638000A7185 /* Main.storyboard */,
 				754CF70A1F7D7638000A7185 /* Assets.xcassets */,
 				754CF70C1F7D7638000A7185 /* LaunchScreen.storyboard */,
 				754CF70F1F7D7638000A7185 /* Info.plist */,
 			);
 			path = Zendesk;
+			sourceTree = "<group>";
+		};
+		754CF7171F7D7812000A7185 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				754CF7271F7D9ED7000A7185 /* TiketsModel.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		754CF7181F7D782F000A7185 /* viewmodels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = viewmodels;
+			sourceTree = "<group>";
+		};
+		754CF7191F7D7869000A7185 /* services */ = {
+			isa = PBXGroup;
+			children = (
+				754CF71A1F7D78BA000A7185 /* MainService.swift */,
+				754CF71F1F7D7C64000A7185 /* HelperServices.swift */,
+			);
+			name = services;
+			sourceTree = "<group>";
+		};
+		754CF71C1F7D7926000A7185 /* errors */ = {
+			isa = PBXGroup;
+			children = (
+				754CF71D1F7D793B000A7185 /* GeneralErrors.swift */,
+			);
+			name = errors;
+			sourceTree = "<group>";
+		};
+		754CF7211F7D7DD0000A7185 /* value_objects */ = {
+			isa = PBXGroup;
+			children = (
+				754CF7221F7D7DEC000A7185 /* VO.swift */,
+			);
+			name = value_objects;
+			sourceTree = "<group>";
+		};
+		754CF7241F7D9C71000A7185 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				754CF7251F7D9CB1000A7185 /* Reactive+Extensions.swift */,
+			);
+			name = extensions;
 			sourceTree = "<group>";
 		};
 		F7EAE90351FF5194C3B6761A /* Pods */ = {
@@ -212,8 +278,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				754CF7061F7D7638000A7185 /* ViewController.swift in Sources */,
+				754CF7261F7D9CB1000A7185 /* Reactive+Extensions.swift in Sources */,
+				754CF7281F7D9ED7000A7185 /* TiketsModel.swift in Sources */,
+				754CF7061F7D7638000A7185 /* TicketsListController.swift in Sources */,
+				754CF71E1F7D793B000A7185 /* GeneralErrors.swift in Sources */,
+				754CF7231F7D7DEC000A7185 /* VO.swift in Sources */,
+				754CF7201F7D7C64000A7185 /* HelperServices.swift in Sources */,
 				754CF7041F7D7638000A7185 /* AppDelegate.swift in Sources */,
+				754CF71B1F7D78BA000A7185 /* MainService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,6 +453,7 @@
 				754CF7141F7D7638000A7185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
