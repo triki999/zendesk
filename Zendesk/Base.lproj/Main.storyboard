@@ -29,7 +29,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="156"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bDi-Ak-qI7" id="zc5-u4-TbP">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="155.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="156"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Subject" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wda-9R-jwO">
@@ -82,6 +82,12 @@
                                                 <constraint firstItem="FhQ-1X-Ilh" firstAttribute="top" secondItem="ekG-uY-kOs" secondAttribute="bottom" constant="8" id="yb5-gu-kHU"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lbDescription" destination="ddj-lL-elk" id="vXB-u8-cmE"/>
+                                            <outlet property="lbId" destination="ekG-uY-kOs" id="cSb-eh-Jw8"/>
+                                            <outlet property="lbStatus" destination="FhQ-1X-Ilh" id="92c-TD-qYE"/>
+                                            <outlet property="lbSubject" destination="Wda-9R-jwO" id="Uif-nx-GU2"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -98,6 +104,9 @@
                             <constraint firstItem="kgd-Cq-rSn" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="qrR-Ld-brs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="kgd-Cq-rSn" id="FLT-ns-t2P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

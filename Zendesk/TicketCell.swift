@@ -10,6 +10,10 @@ import UIKit
 
 class TicketCell: UITableViewCell {
 
+    @IBOutlet weak var lbSubject: UILabel!
+    @IBOutlet weak var lbId: UILabel!
+    @IBOutlet weak var lbStatus: UILabel!
+    @IBOutlet weak var lbDescription: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

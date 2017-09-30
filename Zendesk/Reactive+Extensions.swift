@@ -42,10 +42,16 @@ extension SignalProducer
             return self.continueWithSelfIfError(callback)
         }
     }
+    
+    public func onStarting(callBack:@escaping () -> Void) -> SignalProducer<Value,Error>
+    {
+        return self.on(starting: callBack, started: nil, event: nil, failed: nil, completed: nil, interrupted: nil, terminated: nil, disposed: nil, value: nil)
+    }
 }
 
 extension Signal
 {
+    
     public func doNext(callBack:@escaping (_ value:Value) -> Void) -> Signal<Value,Error>
     {
         return self.on(event: nil, failed: nil, completed: nil, interrupted: nil, terminated: nil, disposed: nil) { (value) in

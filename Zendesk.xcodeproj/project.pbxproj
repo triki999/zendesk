@@ -21,6 +21,7 @@
 		754CF7281F7D9ED7000A7185 /* TiketsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF7271F7D9ED7000A7185 /* TiketsModel.swift */; };
 		754CF72D1F7DA14A000A7185 /* TicketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF72C1F7DA14A000A7185 /* TicketCell.swift */; };
 		754CF7301F7DA1E4000A7185 /* AppEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF72F1F7DA1E4000A7185 /* AppEnums.swift */; };
+		754CF7321F7DACBC000A7185 /* TicketsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 754CF7311F7DACBC000A7185 /* TicketsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		754CF7271F7D9ED7000A7185 /* TiketsModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TiketsModel.swift; sourceTree = "<group>"; };
 		754CF72C1F7DA14A000A7185 /* TicketCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketCell.swift; sourceTree = "<group>"; };
 		754CF72F1F7DA1E4000A7185 /* AppEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppEnums.swift; sourceTree = "<group>"; };
+		754CF7311F7DACBC000A7185 /* TicketsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TicketsViewModel.swift; sourceTree = "<group>"; };
 		995E3AB65C51EA612707BE76 /* Pods-Zendesk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zendesk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zendesk/Pods-Zendesk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 		754CF7181F7D782F000A7185 /* viewmodels */ = {
 			isa = PBXGroup;
 			children = (
+				754CF7311F7DACBC000A7185 /* TicketsViewModel.swift */,
 			);
 			name = viewmodels;
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				754CF7201F7D7C64000A7185 /* HelperServices.swift in Sources */,
 				754CF7041F7D7638000A7185 /* AppDelegate.swift in Sources */,
 				754CF71B1F7D78BA000A7185 /* MainService.swift in Sources */,
+				754CF7321F7DACBC000A7185 /* TicketsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
