@@ -47,8 +47,10 @@ class TicketsListController: UIViewController, UITableViewDelegate, UITableViewD
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
     {
-        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.ticketCell.V)
-        return cell!
+        let cell = tableView.dequeueReusableCell(withIdentifier: CellIdentifier.ticketCell.V) as! TicketCell
+        cell.data = self.viewModel.ticketAtIndex(index: indexPath.row)
+        
+        return cell
     }
     
     override func didReceiveMemoryWarning() {

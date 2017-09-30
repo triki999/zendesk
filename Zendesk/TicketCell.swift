@@ -24,5 +24,29 @@ class TicketCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    private var _data:Ticket?
+    
+    var data:Ticket?
+    {
+        get{
+            return _data
+        }
+        
+        set{
+           
+            guard let __data = newValue else {
+                return;
+            }
+            
+            _data = __data
+            
+            lbSubject.text = __data.subject;
+            lbId.text = "\(__data.id)";
+            lbStatus.text = __data.status;
+            lbDescription.text = __data.description;
+            
+        }
+    }
 
 }
